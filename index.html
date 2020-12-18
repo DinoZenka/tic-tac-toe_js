@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <!-- bootstrap -->
+    <style>
+        #grid {
+            display: grid;
+            grid-template: repeat(3, 150px) / repeat(3, 150px);
+            border: 2px solid #2c3e50;
+        }
+        
+        #grid>div {
+            font-size: 5vw;
+            background: #34495e;
+            text-align: center;
+            border: 2px solid #2c3e50;
+            cursor: pointer;
+            font-family: Helvetica;
+            font-weight: bold;
+            font-size: 4em;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+        }
+        
+        .title {
+            text-align: center;
+            margin-top: 25px;
+            margin-bottom: 25px;
+        }
+        
+        .content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .status {
+            width: 300px;
+            margin-top: 10px;
+            margin-left: 31.5%;
+            display: flex;
+        }
+        
+        .butt {
+            margin-left: 105px;
+            margin-top: 20px;
+            padding: 5px 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container title">
+        <h1>TIC-TAC-TOE</h1>
+    </div>
+
+    <div class="container row">
+        <div class="col-lg-4 ">
+            <div class="status">
+                <h3>Game status:&ensp;</h3><br>
+            </div>
+            <div class="status">
+                <h2 id="game-state">Game started</h2>
+            </div>
+            <button class="butt" onclick="resetGame()">Reset</button>
+
+        </div>
+        <div class="col-lg-5 offset-lg-1 content">
+            <div id="grid">
+                <div id="1" class="grid-unit" onclick="markSell(1)"></div>
+                <div id="2" class="grid-unit" onclick="markSell(2)"></div>
+                <div id="3" class="grid-unit" onclick="markSell(3)"></div>
+                <div id="4" class="grid-unit" onclick="markSell(4)"></div>
+                <div id="5" class="grid-unit" onclick="markSell(5)"></div>
+                <div id="6" class="grid-unit" onclick="markSell(6)"></div>
+                <div id="7" class="grid-unit" onclick="markSell(7)"></div>
+                <div id="8" class="grid-unit" onclick="markSell(8)"></div>
+                <div id="9" class="grid-unit" onclick="markSell(9)"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    <script src="index.js">
+    </script>
+
+    <!-- bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <!-- bootstrap -->
+</body>
+
+</html>
